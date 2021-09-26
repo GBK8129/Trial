@@ -15,3 +15,4 @@ File index:
 - Source Code: All the code we've used to build the website.
 - Project Documentation: Details about the project, Features, Future developments and more.
 - Docs : Source File for GitHub to host the website.
+- Screenshots: Screenshots of the website.
