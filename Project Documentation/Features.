@@ -1,1 +1,28 @@
+# Codeinit 2021 - BookMyVenue
+
+The repo includes the code for the client-side of the website.
+
+Now let's take a look at how the Resource Booking process on BookMyVenue currently works (We have ideas for improvements too, check out 'Future Developments'):
+
+# Say a student Rajan would like to book the 'Creative Zone' to conduct a meeting of the Student's Commune.
+
+# He would first have to go on to the website, and click on the 'Booking' option.
+
+# This will redirect him to a Booking form with the following details:
+       
+      ~Full name
+      ~Time duration
+      ~Place 
+      ~Faculty in charge 
+      ~Permission of students from hostel (incase of first years)
+      ~Any other details 
+      ~Club/organization that conducts the event
+      
+# Once the form is filled, the information will then be recieved by the concerned authorities, who will then update the 
+  status of his request on the 'status page'.
+
+# If the request is approved, a permission slip can also be made available to downlad from the website itself.
+
+# Thus Rajan can check the status of his request on the site itself. This system will avoid clashes between various clubs/committees as it 
+  will be possible to view currrent bookings and requests, with the date and time as well.
 
