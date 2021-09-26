@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Request Status-BMV</title>
+    <link rel="stylesheet" type="text/css" href="css/book.css">
+    <link rel="stylesheet" type="text/css" href="css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+</head>
+<body>
+    <header>    
+
+        <div class="main">
+            
+             <ul>
+               <li> <a href="index.html">Home</a> </li>
+               <li class="active"> <a href="Booking.html">Booking</a></li>
+               <li> <a href="Status.html">Status</a></li>
+               <li> <a href="Contact.html">Contact Us</a></li>
+             </ul>
+            
+
+            <div class="logo">
+                <img src="Logo_white.png" width="200" height="200" >
+
+            </div>
+        </div>>
+        <body class="form-v2">
+            <div class="page-content">
+                <div class="form-v2-content">
+                    <div class="form-left">
+                        <img src="form-v2.png" width="150" heigh="450" alt="form">
+                       
+                       
+                    </div>
+                    <form class="form-detail" action="#" method="post" id="myform">
+                        <h2>Venue Request Form</h2>
+                        <div class="form-row">
+                            <label for="full-name">Full name:</label>
+                            <input type="text" name="full_name" id="full_name" class="input-text" placeholder="ex: Lindsey Wilson">
+                        </div>
+                        <div class="form-row">
+                            <label for="text">Required Venue:</label>
+                            <input type="text" name="text" id="text" class="input-text" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="text">Club/Committee:</label>
+                            <input type="text" name="text" id="text" class="input" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="file">Hostel Permission:</label>
+                            <input type="file" name="file" id="file" class="input" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="full-name">Faculty in Charge:</label>
+                            <input type="text" name="text" id="text" class="input-text" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="Time">Time duration</label>
+                            <input type="text" name="text" id="text" class="input-text" required>
+                        </div>
+                        
+                        <div class="form-row-last">
+                            <input type="submit" name="register" class="register" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+            <script>
+                // just for the demos, avoids form submit
+                jQuery.validator.setDefaults({
+                      debug: true,
+                      success:  function(label){
+                        label.attr('id', 'valid');
+                        },
+                });
+                $( "#myform" ).validate({
+                      rules: {
+                        password: "required",
+                        confirm_password: {
+                              equalTo: "#password"
+                        }
+                      },
+                      messages: {
+                          full_name: {
+                              required: "Please provide an username"
+                          },
+                          your_email: {
+                              required: "Please provide an email"
+                          },
+                          password: {
+                              required: "Please provide a password"
+                          },
+                          confirm_password: {
+                              required: "Please provide a password",
+                              equalTo: "Wrong Password"
+                        }
+                      }
+                });
+            </script>
+        </div>>
+            
+    </header>
+</body>
+</html>
